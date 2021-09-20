@@ -207,7 +207,7 @@ header {
     line-height: 1.1;
 }
 .accounts-container img {
-    width: 4rem;
+    width: 88px;
     border-radius: 50%;
     border: 2px solid seashell;
     margin-right: .5rem;
@@ -243,7 +243,7 @@ header {
         line-height: normal
     }
     .accounts-container img {
-        width: 7rem;
+        width: 154px;
     }
     .account h3 {
         font-size: .91rem;
