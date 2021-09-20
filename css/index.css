@@ -1,0 +1,278 @@
+/*Universal styles*/
+
+html {
+    font-size: 22px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: seashell;
+    background-color: black;
+    font-family: 'EB Garamond', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mate SC', serif;
+}
+h1 {
+    margin: .6rem 0;
+    font-size: 1.5rem;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+section {
+    margin-bottom: 2.5rem;
+}
+
+/*Header*/
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a {
+    color: seashell;
+    font-family: 'Mate SC', serif;
+}
+a:hover {
+    text-decoration: none;
+    color: #a5a5fa;
+}
+.facebook-logo {
+    padding: .23rem;
+    box-sizing: border-box;
+}
+.social-networks img {
+    width: 1.8rem;
+    margin-top: .2rem;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 .5rem;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
+}
+@media only screen and (min-width: 380px) and (max-width: 849px) {
+    nav {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    header {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        background-color: black;
+    }
+    main {
+        position: relative;
+        top: 3.66rem;
+    }
+    nav a {
+        margin: 0 .9rem;
+    }
+    .social-networks a {
+        margin: 0;
+    }
+    nav {
+        flex-direction: row;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/*About section*/
+
+.hero-image {
+    background: url("../images/CjpBe_enofE.jpg") center top / cover no-repeat;
+    min-height: 65vw;
+}
+.container {
+    padding: 0 .9rem;
+}
+.info p {
+    text-align: justify;
+}
+.spotify-button {
+    width: 8rem;
+    display: block;
+}
+.spotify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.spotify a:hover {
+    background-color: #a5a5fa;
+    border-radius: 10px;
+}
+.spotify p {
+    font-size: .82rem;
+    padding-right: .45rem;
+    line-height: 1.1;
+}
+@media only screen and (min-width: 380px) and (max-width: 849px) {
+    .spotify {
+        position: absolute;
+        top: 5rem;
+        left: 51vw;
+        background-color: hsla(240, 93%, 12%, .5);
+        box-shadow: -30px 15px 80px 80px hsla(240, 93%, 12%, .5);
+        flex-direction: column;
+        padding-top: .6rem;
+    }
+    .spotify p {
+        text-align: center;
+        font-size: .91rem;
+    }
+    .spotify-button {
+        width: 6.5rem;
+}
+}
+
+@media only screen and (min-width: 850px) {
+    .info {
+        position: absolute;
+        top: .7rem;
+        left: 51vw;
+        background-color: hsla(240, 93%, 12%, .5);
+        box-shadow: -30px 15px 80px 80px hsla(240, 93%, 12%, .5);
+    }
+}
+
+/*Reasons-section*/
+
+.album {
+    font-style: italic;
+}
+.reason {
+    margin-bottom: 1.5rem;
+}
+.reason img {
+    width: 100%;
+}
+.reason p {
+    font-size: .91rem;
+    line-height: 1.1;
+}
+
+@media only screen and (min-width: 768px) {
+    .reason {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .reason img {
+        width: 60%;
+    }
+    .reason p {
+        width: 40%;
+    }
+    .rest-of-images {
+        margin-top: -2rem;
+    }
+    .image-1, .image-3 {
+        order: -1;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .reason p {
+        font-size: 1rem;
+        line-height: normal;
+    }
+}
+
+/*Fan accounts section*/
+
+.accounts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: .91rem;
+    line-height: 1.1;
+}
+.accounts-container img {
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid seashell;
+    margin-right: .5rem;
+}
+.account {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 .5rem .5rem 0;
+}
+.account-link {
+    color: seashell;
+    text-decoration: none;
+}
+.account p {
+    margin: .5rem 0;
+}
+.account h3 {
+    font-size: .75rem;
+}
+#fan-accounts h4 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.discord-invite {
+    color: seashell;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 576px) {
+    .accounts-container {
+        font-size: 1rem;
+        line-height: normal
+    }
+    .accounts-container img {
+        width: 7rem;
+    }
+    .account h3 {
+        font-size: .91rem;
+    }
+}
+
+@media only screen and (min-width: 1062px) {
+    .account {
+        max-width: 500px;
+    }
+}
+
+/*Footer section*/
+
+footer {
+    margin-top: 3rem;
+    border-top: 2px solid seashell;
+}
+footer p {
+    margin: .5rem 0;
+    text-align: center;
+    font-size: .91rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+@media only screen and (min-width: 850px) {
+    footer {
+        margin-top: 7rem;
+    }
+}
+
